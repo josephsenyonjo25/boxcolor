@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .App{
   display: flex;
   flex-direction: column;
@@ -19,4 +19,9 @@
 p{
   color:white;
   font-size: 2.5em;
+}
+
+h1 {
+  margin: 10px;
+  font-family: 'Lobster', cursive;
 }
