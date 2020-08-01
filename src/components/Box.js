@@ -15,10 +15,10 @@ class Box extends Component {
   toggleColor() {
       let boxcolor;
       if(this.state.clickCounter %2 === 0) {
-          this.setState({color:"blue", count: this.state.count+1});
+        boxcolor = "blue";
       }
       else{
-          this.setState({color: "orange", count: this.state.count+1});
+        boxcolor = "orange";
       }
       let count = this.state.clickCounter+1;
       this.setState({clickCounter: count, color: boxcolor});
