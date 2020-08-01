@@ -9,7 +9,7 @@ class App extends Component {
         <div className="App"> 
             <Box />
         </div>
-      );
+      );   
     }
   }
 
