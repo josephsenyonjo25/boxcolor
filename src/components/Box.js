@@ -8,7 +8,21 @@ class Box extends Component {
             color:"blue",
             clickCounter: 0
         };
-  
+        this.toggleColor = this.toggleColor.bind(this);
+    
+    }
+
+  toggleColor() {
+      let boxcolor;
+      if(this.state.clickCounter %2 === 0) {
+          this.setState({color:"blue", count: this.state.count+1});
+      }
+      else{
+          this.setState({color: "orange", count: this.state.count+1});
+      }
+      let count = this.state.clickCounter+1;
+      this.setState({clickCounter: count, color: boxcolor});
+  }
         
         render() {
           return (
